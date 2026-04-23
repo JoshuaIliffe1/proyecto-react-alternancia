@@ -1,0 +1,76 @@
+/* === CSS Variables: Exercise 5 - Dark/Light Mode === */
+:root {
+  --color-bg: #f5f7fa;
+  --color-bg-secondary: #ffffff;
+  --color-bg-input: #ffffff;
+  --color-text: #1a1a2e;
+  --color-text-secondary: #55557a;
+  --color-primary: #4361ee;
+  --color-primary-hover: #3a56d4;
+  --color-border: #d0d7e3;
+  --color-error: #e63946;
+  --color-success: #2dc653;
+  --color-warning: #f4a261;
+  --color-card-shadow: rgba(0, 0, 0, 0.08);
+  --color-nav-bg: #ffffff;
+  --color-nav-shadow: rgba(0, 0, 0, 0.06);
+  --color-highlight-bg: #fffbe6;
+  --color-highlight-border: #ffc107;
+  --transition: 0.3s ease;
+}
+
+/* Dark mode overrides via data-theme attribute */
+[data-theme='dark'] {
+  --color-bg: #0f0f1a;
+  --color-bg-secondary: #1a1a2e;
+  --color-bg-input: #12122a;
+  --color-text: #e8e8f0;
+  --color-text-secondary: #9999bb;
+  --color-primary: #6c8cff;
+  --color-primary-hover: #5577ff;
+  --color-border: #2e2e4a;
+  --color-error: #ff6b6b;
+  --color-success: #51cf66;
+  --color-warning: #ffb347;
+  --color-card-shadow: rgba(0, 0, 0, 0.4);
+  --color-nav-bg: #1a1a2e;
+  --color-nav-shadow: rgba(0, 0, 0, 0.3);
+  --color-highlight-bg: #2a2000;
+  --color-highlight-border: #d4a017;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color var(--transition), color var(--transition);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+h1, h2, h3 {
+  color: var(--color-text);
+  line-height: 1.3;
+}
