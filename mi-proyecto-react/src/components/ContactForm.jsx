@@ -1,4 +1,4 @@
-/**
+/** // Ejercicio 2 - Formulario con validaciones
  * ContactForm.jsx — Exercise 2
  * Controlled form with real-time validation for Name, Email, and Message.
  * - onChange: keeps state in sync with input values
