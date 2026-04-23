@@ -1,4 +1,4 @@
-/**
+/** // Ejercicio 3 - Galería de imágenes interactiva
  * Gallery.jsx — Exercise 3
  * Interactive image gallery: thumbnails + main image.
  * Clicking a thumbnail updates the main image using useState.
