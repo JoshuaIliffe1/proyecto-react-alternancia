@@ -1,4 +1,4 @@
-/**
+/** // Ejercicio 4 - Sistema de posts dinámico
  * Blog.jsx — Exercise 4
  * Dynamic post management (mini-CMS).
  * - Form to create new posts (title + description)
